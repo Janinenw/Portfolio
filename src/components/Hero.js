@@ -14,8 +14,10 @@ const Hero = () => {
           data-aos-duration='500'
           className='text-teal-600'
         >
-          def greet(): print("Hello world,
-     my name is ")
+          def greet():
+          </p>
+          <p>
+           print("Hello world, my name is
 
         </p>
         <h1
@@ -43,7 +45,7 @@ const Hero = () => {
           data-aos-once='true'
           className='text-teal-600 py-6 max-w-[600px]'
         >
-        I am a Full-stack software engineer with a background in literature and education. I am passionate about exploring the intersection of pedagogy and technology to enhance user experiences. 
+        I am a Full-stack software engineer with a background in literature and education. I am passionate about exploring the intersection of pedagogy and technology to enhance user experiences. ")
         </p>
 
 <p>
