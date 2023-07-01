@@ -61,33 +61,10 @@ const Hero = () => {
             <span style={{color: "yellow"}}>()</span>
           </p>
 
-          <div className='w-full flex justify-start gap-4'>
-            <button
-              data-aos='fade-up'
-              data-aos-duration='500'
-              data-aos-delay='200'
-              data-aos-once='true'
-              className='px-8 py-4 bg-teal-600 hover:bg-teal-700 text-slate-200 font-bold mt-12 flex items-center space-x-3 font-mono rounded'
-            >
-              <Link to='work' smooth={true} duration={700} offset={-125}>
-                My Work
-              </Link>
-            </button>
-
-            <a
-              className='px-8 py-4 bg-teal-600 hover:bg-teal-700 text-slate-200 font-bold mt-12 flex items-center space-x-3 font-mono rounded'
-              target='_blank'
-              rel='noopener noreferrer'
-              data-aos='fade-up'
-              data-aos-duration='500'
-              data-aos-delay='250'
-              data-aos-once='true'
-            >
-              My Resume
-            </a>
+          
           </div>
         </div>
-      </div>
+      
     );
 };
 
