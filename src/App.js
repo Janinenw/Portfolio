@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 import './App.css';
 
 import Aos from 'aos';
@@ -14,6 +15,7 @@ function App() {
     <>
     
       <Hero />
+      <Navbar />
    
  
     </>
