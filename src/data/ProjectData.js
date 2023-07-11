@@ -15,7 +15,7 @@ export const ProjectData = [
         title: 'REEL Happy!',
         subtitle: 'MERN Stack, External API',
         description:
-          'REEL Happy! Is an app that lets users rate movies based on how much joy they bring them.',
+          'REEL Happy! Is an app that lets users rate movies based on how much joy they bring.',
          image: require('../assets/reel_happy.png'),
          link: 'https://reel-happy.herokuapp.com/'
       
