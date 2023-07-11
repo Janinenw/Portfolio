@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll'; 
 import { navData } from '../data/NavData';
-import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -30,14 +30,27 @@ const Navbar = () => {
       <aside className={`font-mono fixed h-screen top-0 left-0 z-50 bg-customgray text-slate-200 flex flex-col items-start justify-between w-64 transform ${open ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-200 ease-in-out`}>
         <ul className='space-y-4 w-full'>
           {navData.map((item, index) => (
-            <li
-              className='cursor-pointer hover:bg-customlightgray transition-colors duration-200 w-full'
-              key={index}
-            >
-              <Link onClick={handleClick} to={item.name} smooth={true} offset={-125} duration={700} className='block w-full py-2 text-center'>
-                {item.title}
-              </Link>
-            </li>
+            item.name !== 'resume'
+            ? (
+              <li
+                className='cursor-pointer hover:bg-customlightgray transition-colors duration-200 w-full'
+                key={index}
+              >
+                <Link onClick={handleClick} to={item.name} smooth={true} offset={-125} duration={700} className='block w-full py-2 text-center'>
+                  {item.title}
+                </Link>
+              </li>
+            )
+            : (
+              <li
+                className='cursor-pointer hover:bg-customlightgray transition-colors duration-200 w-full'
+                key={index}
+              >
+                <a href={item.link} className='block w-full py-2 text-center'>
+                  {item.title}
+                </a>
+              </li>
+            )
           ))}
           <li className='cursor-pointer hover:bg-customlightgray transition-colors duration-200 w-full'>
             <Link onClick={handleClick} to='contact' smooth={true} duration={700} className='block w-full py-2 text-center'>
@@ -45,7 +58,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-      </aside>
+      </aside> 
     </>
   );
 };
