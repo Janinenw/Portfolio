@@ -32,7 +32,7 @@ const About = () => {
         data-aos-once='true'
       >
         <img
-          className='w-[300px] mx-auto outline outline-offset-2 outline-slate-200'
+          className='w-[300px] mx-auto outline outline-offset-2 outline-customvsblue'
           src={require('../assets/Janine-Wexler-About.png')}
           alt ='Janine Wexler'
           
