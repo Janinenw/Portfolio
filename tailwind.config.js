@@ -1,5 +1,3 @@
-
-
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -9,6 +7,8 @@ module.exports = {
       colors: {
         customgray: '#333333',
         customlightgray:'#37373c',
+        customvsblue:'#559cd6',
+     
       }
     },
   },

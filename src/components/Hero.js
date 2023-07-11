@@ -14,15 +14,15 @@ const Hero = () => {
             data-aos-duration='500'
             style={{marginBottom: '20px'}} 
           >
-            <span style={{ color: "#1C4EC6" }}>def</span> 
+            <span style={{ color: "#559cd6" }}>def</span> 
             <span className='text-white'> greet</span>
-            <span style={{color: "yellow"}}>()</span>
+            <span style={{color: "#ffd702"}}>()</span>
             <span className='text-white'> :</span>
           </p>
           
           <p>
             <span className='text-white'> print </span>
-            <span style={{color: "orange"}}>"Hello world, my name is</span>
+            <span style={{color: "#ce9178"}}>"Hello world, my name is</span>
           </p>
 
           <h1
@@ -32,7 +32,7 @@ const Hero = () => {
             data-aos-once='true'
             className='text-5xl md:text-6xl lg:text-7xl font-bold text-slate-200 py-2'
           >
-            <span style={{color: "orange"}}>Janine Wexler.</span>
+            <span style={{color: "#ce9178"}}>Janine Wexler.</span>
           </h1>
 
           <h2
@@ -51,14 +51,14 @@ const Hero = () => {
             data-aos-once='true'
             className='text-teal-600 py-6 max-w-[600px]'
           >
-            <span style={{color: "orange"}}>
-            I am a Full-stack software engineer with a background in literature and education. I am passionate about exploring the intersection of pedagogy and technology to enhance user experiences."
+            <span style={{color: "#ce9178"}}>
+            I am a full-stack software engineer with a background in literature and education. I am passionate about exploring the intersection of pedagogy and technology to enhance user experiences and create more equitable learning environments."
             </span>
           </p>
 
           <p>
           <span className='text-white'> greet</span>
-            <span style={{color: "yellow"}}>()</span>
+            <span style={{color: "#ffd702"}}>()</span>
           </p>
 
           
