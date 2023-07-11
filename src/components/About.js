@@ -31,6 +31,12 @@ const About = () => {
         data-aos-delay='150'
         data-aos-once='true'
       >
+        <img
+          className='w-[300px] mx-auto outline outline-offset-2 outline-slate-200'
+          src={require('../assets/Janine-Wexler-About.png')}
+          alt ='Janine Wexler'
+          
+        />
       </div>
     </div>
   );
