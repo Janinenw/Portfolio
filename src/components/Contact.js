@@ -24,7 +24,7 @@ const Contact = () => {
           data-aos-once='true'
           className='my-8 w-full max-w-3xl leading-normal'
         >
-         I am open for work! Let's connect and explore how my creative problem-solving and unique approaches to development can transform your concepts into compelling experiences!
+         I am open for work! Let's connect and explore how my creative problem-solving and unique approaches to development can transform your concepts into compelling experiences.
         </p>
       </div>
       <div className='container grid justify-center grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-7'>
