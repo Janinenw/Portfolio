@@ -5,8 +5,9 @@ const Contact = () => {
   return (
     <div
       name='contact'
-      className='container flex flex-col mx-auto px-8 py-10 md:px-10 lg:px-20 h-[500px] max-w-[1160px] font-mono text-slate-200 gap-8 my-24'
+      className='container flex flex-col mx-auto px-8 py-10 md:px-10 lg:px-20 h-[500px] max-w-[1160px] font-mono text-slate-200 gap-8 mt-96 my-24'
     >
+
       <div>
         <h1
           data-aos='fade-up'
