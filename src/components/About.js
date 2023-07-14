@@ -2,6 +2,20 @@ import React from 'react';
 import { AboutData } from '../data/AboutData';
 
 const About = () => {
+  const italicizeText = (text) => {
+    const parts = text.split('Twin Peaks');
+    return parts.map((part, index) =>
+      index !== parts.length - 1 ? (
+        <React.Fragment key={index}>
+          {part}
+          <i style={{ fontStyle: 'italic' }}>Twin Peaks</i>
+        </React.Fragment>
+      ) : (
+        part
+      )
+    );
+  };
+
   return (
     <div
       name='about'
@@ -19,7 +33,7 @@ const About = () => {
         {AboutData.map((item, index) => (
           <div key={index}>
             <p className='my-8 mx-auto w-full max-w-5xl leading-normal'>
-              {item.paragraph}
+              {italicizeText(item.paragraph)}
             </p>
           </div>
         ))}
@@ -34,8 +48,7 @@ const About = () => {
         <img
           className='w-[300px] mx-auto outline outline-offset-2 outline-customvsblue'
           src={require('../assets/Janine-Wexler-About.png')}
-          alt ='Janine Wexler'
-          
+          alt='Janine Wexler'
         />
       </div>
     </div>
