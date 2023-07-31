@@ -20,15 +20,14 @@ const Work = () => {
       </div>
       <div className='container grid justify-center grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-7 my-10'>
         {ProjectData.map((project) => (
-          <div
-            key={project.image}
-            className='hover:bg-customvsblue hover:bg-opacity-30 border-2 border-customvsblue rounded'
-          >
-            {project.type === 'video' ? (
-              <video width="100%" height="auto" controls src={project.link}></video>
-            ) : (
-              <img alt='gallery' className='h-56 lg:h-60 w-full object-cover' src={project.image} />
-            )}
+          <div key={project.image} className='hover:bg-customvsblue hover:bg-opacity-30 border-2 border-customvsblue rounded'>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              {project.type === 'video' ? (
+                <video width="100%" height="auto" controls src={project.link}></video>
+              ) : (
+                <img alt='gallery' className='h-56 lg:h-60 w-full object-cover' src={project.image} />
+              )}
+            </a>
             <div className='p-4'>
               <h2 className='tracking-widest text-sm font-semibold text-customvsblue'>
                 {project.subtitle}
