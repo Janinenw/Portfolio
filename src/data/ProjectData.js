@@ -33,16 +33,17 @@ export const ProjectData = [
       
     
       },
-      {
-        title: 'Multiplication Mayhem!',
-        subtitle: 'JavaScript, HTML, CSS',
-        description:
-        'A fun game to help kids practice their multiplication skills',
-         image: require('../assets/multiplication_mayhem.png'),
-         link: 'https://janinenw.github.io/Multiplication-Mayhem/'
       
-    
-      },
+        {
+          title: 'Multiplication Mayhem!',
+          subtitle: 'JavaScript, HTML, CSS',
+          description: 'A fun game to help kids practice their multiplication skills',
+          image: require('../assets/multiplication_mayhem.png'),
+          link: '/video/Multiplication-Mayhem-Demo.mp4',
+          type: 'video',
+        },
+      
+  
   
       
     

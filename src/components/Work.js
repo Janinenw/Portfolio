@@ -18,34 +18,27 @@ const Work = () => {
           My Work
         </h1>
       </div>
-      <div class='container grid justify-center grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-7 my-10 '>
+      <div className='container grid justify-center grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-7 my-10'>
         {ProjectData.map((project) => (
-          <a
-            data-aos='fade-up'
-            data-aos-duration='500'
-            data-aos-delay='200'
-            data-aos-once='true'
-            href={project.link}
+          <div
             key={project.image}
-            className='hover:bg-customvsblue hover:bg-opacity-30 border-2 border-customvsblue rounded '
+            className='hover:bg-customvsblue hover:bg-opacity-30 border-2 border-customvsblue rounded'
           >
-            <div className='md:max-w-none overflow-hidden'>
-              <img
-                alt='gallery'
-                className='h-56 lg:h-60 w-full object-cover'
-                src={project.image}
-              />
-              <div className='p-4  '>
-                <h2 className='tracking-widest text-sm font-semibold text-customvsblue'>
-                  {project.subtitle}
-                </h2>
-                <h1 className='text-xl tracking-widest font-medium text-white my-1'>
-                  {project.title}
-                </h1>
-                <p className='leading-relaxed'>{project.description}</p>
-              </div>
+            {project.type === 'video' ? (
+              <video width="100%" height="auto" controls src={project.link}></video>
+            ) : (
+              <img alt='gallery' className='h-56 lg:h-60 w-full object-cover' src={project.image} />
+            )}
+            <div className='p-4'>
+              <h2 className='tracking-widest text-sm font-semibold text-customvsblue'>
+                {project.subtitle}
+              </h2>
+              <h1 className='text-xl tracking-widest font-medium text-white my-1'>
+                {project.title}
+              </h1>
+              <p className='leading-relaxed'>{project.description}</p>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </div>
